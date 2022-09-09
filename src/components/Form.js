@@ -1,7 +1,10 @@
+import React,{useState} from "react";
 function Form() {
   const [firstName, setFirstName] = useState("John");
   const [lastName, setLastName] = useState("Henry");
   const [submittedData, setSubmittedData] = useState([]);
+  const [errors, setErrors] = useState([]);
+
 
   function handleFirstNameChange(event) {
     setFirstName(event.target.value);
